@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/轮播图.css"/>
+		<script type="text/javascript"src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="js/轮播图.js"></script>
+		<!--<script>
+			$(function(){
+				var i=0;
+				var size=$('#container>#list>img').size()
+				$(' #container>#posintsDiv>span').hover(function(){
+					var index=$(this).index()
+					i=index
+					$('#container #list').stop().animate({left:i*-600},500)
+					$(this).addClass('on').siblings().removeClass('on')
+				})
+				$('#prev').click(function(){
+					i--;
+					move()	
+				})
+				$('#next').click(function(){
+					i++;
+					move()	
+				})
+				
+				
+				
+				function move(){
+					if(i===size){
+						$('#container #list').css({left:0})
+						i=1
+					}
+					if(i===-1){
+						$('#container #list').css({left:-(size-1)*600})
+						i=size-2
+					}
+					$('#container #list').stop().animate({left:i*-600},500)
+					if(i===size-1){
+						$('#posintsDiv span').eq(0).addClass('on').siblings().removeClass('on')
+					}else{
+						$('#posintsDiv span').eq(i).addClass('on').siblings().removeClass('on')
+					}
+					
+				}
+				
+				
+				var intervalId=setInterval(function(){
+					i++
+					move()	
+				},3000)
+				$('#container').hover(function(){
+					clearInterval(intervalId)
+				},function(){
+					intervalId=setInterval(function(){
+						i++
+						move()	
+					},3000)
+				})
+	
+				
+			})
+			
+			
+			
+			
+			
+		</script>-->
+	</head>
+	<body>
+		<div id="container">
+			<div id="list" <!--style="left: -600px;"-->
+				<!--<img src="img/5.jpg" alt="5"/>-->
+				<img src="img/1.jpg" alt="1"/>
+				<img src="img/2.jpg" alt="2"/>
+				<img src="img/3.jpg" alt="3"/>
+				<img src="img/4.jpg" alt="4"/>
+				<img src="img/5.jpg" alt="5"/>	
+				<img src="img/1.jpg" alt="1"/>
+			</div>
+			<div id="posintsDiv">
+				<span index="1" class="on"></span>
+				<span index="2" ></span>
+				<span index="3" ></span>
+				<span index="4" ></span>
+				<span index="5" ></span>
+			</div>
+			<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+			<a href="javascript:;" id="next" class="arrow">&gt;</a>	
+		</div>
+		
+	</body>
+</html>

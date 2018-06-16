@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap 实例</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>堆叠表单</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control"  placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  <h2>内联表单</h2>
+  <p>屏幕宽度在大于等于 576px 时才会水平显示。如果小于 576px 则会生成堆叠表单。</p>
+	<form class="form-inline">
+		<label for="email">Email:</label>
+		<input type="email" class="form-control" id="email" placeholder="Email">
+		<label for="pwd">Password:</label>
+		<input type="password" class="form-control" id="pwd" placeholder="Password">
+		<div class="form-check">
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox">Remember me
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<br>
+	<h2>表单控制:input</h2>
+	<form >
+	<div class="form-group">
+		<label for="usr">用户名:</label>
+		<input type="text" class="form-control" id="usr">
+	</div>
+	<div class="form-group">
+		<label for="pwd">密码:</label>
+		<input type="password" class="form-control" id="pwd">
+		
+	</div>
+	</form>
+	<br>
+	<h2>表单控制:textarea</h2>
+	<form>
+		<div class="form-group">
+			<label for="txt">评论:</label>
+			<textarea class="form-control" rows="5" id="txt"></textarea>
+		</div>
+	</form>
+	<h2>表单空间:checkbox</h2>
+	<form  >
+		<div class="form-check form-check-inline">
+			<label class="form-check-label">
+				<input type="checkbox" class="form-check-input" value="">Option
+			</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<label class="form-check-label">
+				<input type="checkbox" class="form-check-input" value="">Option
+			</label>
+		</div>
+		<div class="form-check  disabled form-check-inline">
+			<label class="form-check-label">
+				<input type="checkbox" class="form-check-input" value="">Option
+			</label>
+		</div>
+	</form>
+	<h2>表单控件:radio</h2>
+	<form>
+		<div class="radio radio-inline">
+			<label><input type="radio" name="optradio">Option 1</label>
+		</div>
+		<div class=" radio-inline">
+			<label><input  type="radio" name="optradio">Option 1</label>
+		</div>
+		<div class=" radio-inline">
+			<label><input  type="radio" name="optradio">Option 1</label>
+		</div>
+		
+	</form>
+	<form>
+		<label class="radio-inline"><input  type="radio" name="optradio">Option 1</label>
+		<label class="radio-inline"><input  type="radio" name="optradio">Option 1</label>
+		<label class="radio-inline"><input  type="radio" name="optradio">Option 1</label>
+	</form>
+	<h2>表单控件: select</h2>
+	<form>
+		<div class="form-group">
+			<label for="sel1">单选下拉菜单:</label>
+			<select  class="form-control" id="sel1">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<br>
+			<label for="sel2">多选下拉框</label>
+			<select multiple class="form-control" id="sel2">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				
+			</select>
+		</div>
+		
+		
+	</form>
+</div>
+
+</body>
+</html>

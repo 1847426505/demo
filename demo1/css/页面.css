@@ -1,0 +1,317 @@
+/*header*/
+.header{
+	
+	height: 110px;
+	
+}
+.center{
+	position:relative ;
+	margin:0 auto ;
+	width:1100px ;
+}
+.footer{
+	height: 318px;
+	background: #3b3b3b;
+	overflow: hidden;
+}
+.header .header-logo{
+	float: left;
+	margin-top:40px ;
+}
+.header .header-logo a{
+	display: block;
+	width:181px;
+	height:54px;
+	background:url(../img2/logo1.png) no-repeat ;
+	
+}
+
+.header .header-nav{
+	float: right;
+	font-size:14px ;
+}
+.header .header-nav .item{
+	float: left;
+	margin-left:48px ;
+	margin-top:48px ;
+}
+.header .header-nav  a{
+	color:#3b3b3b ;
+}
+.header .header-nav  a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+/*banner*/
+.banner{
+	position: relative;
+	background: #b3b3b3;
+	
+	
+	}
+.banner .banner-bg{
+
+	height:570px;
+	overflow:hidden ;
+	
+}
+.banner .banner-bg img{
+	margin:0 auto ;
+}
+.banner-text{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left:-388px ;
+}
+.banner-text .text-logo{
+	width: 776px;
+	height: 117px;
+	background:url(../img2/banner-logo.png) no-repeat;
+}
+.banner-text .text-info{
+	margin-top:17px ;
+	text-align: center;
+	color: #fff;
+}
+.banner-text .text-info .line{
+	display: inline-block;
+	width:40px ;
+	border-top:1px solid #fff ;
+	vertical-align:middle ;
+	
+	*margin-top:20px ;
+}
+.banner-text .text-info .text{
+	margin:0 26px ;
+}
+/*菜单*/
+ .list{
+	position: relative;
+	border-top:4px solid #F34949;
+	
+}
+.list .menu{
+	position: absolute;
+	left:50% ;
+	top:0;
+	margin-left:-78px ;
+	width:156px ;
+	height: 75px;
+	text-align: center;
+	line-height: 65px;
+	color:#fff ;
+	background: #f34949;
+	font-size:20px ;
+}
+.list .menu:after{
+	position: absolute;
+	content:'' ;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left:78px solid transparent ;
+	border-right:78px solid transparent  ;
+	border-bottom:10px solid #fff ;
+
+
+}  
+.list .menu-list{
+	margin-top:156px ;
+	color: #555;
+	overflow: hidden;
+}
+.list .menu-list ul{
+	width: 1160px;
+}
+.list .menu-item{
+	float:left ;
+	width: 520px;
+	margin-right:60px ;
+	margin-bottom: 56px;
+}
+.list .menu-item .title,.list .menu-item .line{
+	float: left;
+}
+.list .menu-item .price{
+	float: right;
+	
+}
+.list .menu-item .title{
+	width: 230px;	
+	white-space:nowrap ;	
+	text-overflow:ellipsis ;	
+	overflow:hidden ;
+}
+.list .menu-item .title a{
+	
+	color:#555 ;
+}
+.list .menu-item .comment{
+	margin-top:4px ;
+	color:#b7b7b7 ;
+	font-size:12px;
+}
+
+
+.list .menu-item .line{
+	margin-top:12px ;
+	width: 192px;
+	border-top: 1px solid #e3e1e1;
+}
+
+.list .menu-btn{
+	display: block;
+	margin:0 auto ;
+	width:130px;
+	height:32px ;
+	padding-left:16px ;
+	border:1px solid #d7d5d5;
+	font-size:14px ;
+	line-height:32px;
+	color:#B7B7B7 ;
+	
+}
+
+.list .menu-btn .icon{
+	
+	display:inline-block ;
+	width:11px ;
+	height: 7px;
+	margin-left:12px ;
+	background:url(../img2/btn.png) no-repeat; 
+}
+/*内容*/
+.panel{
+	margin-top:200px ;
+}
+.panel .panel-header h3{
+	float:left ;
+	margin-right:48px ;
+	font-size:20px ;
+	color:#3b3b3b ;
+	font-family:normal ;
+	
+}
+.panel-header .line{
+	float:left ;
+	margin-top:10px ;
+	width:200px ;
+	border-top:1px solid #e5e3e3 ;
+	*margin-top:15px ;
+
+}
+.panel-header .btn-g{
+	font-size: 0;
+	float:right ;
+}
+.panel-header .btn-g .btn{
+	display:inline-block ;
+	margin-left:12px ;
+	width: 9px;
+	height:9px ;
+	background:#dedede ;
+	border-radius:50% ;
+}
+.panel-header .btn-g .active{
+	background:#9b9b9b ;
+}
+.panel .panel-body{
+	margin-top:75px ;
+} 
+
+.food-list{
+	overflow:hidden ;	
+}
+.food-list ul{
+	width: 1160px;
+}
+.panel .food-list .li-item{
+	float:left ;
+	width: 230px;
+	margin-right:60px ;	
+}
+.panel .food-list .li-item img{
+	margin-bottom:30px ;
+	height:202px;
+}
+.panel .food-list .li-item .name{
+	position: relative;
+	color:#555;
+	margin-bottom: 10px;
+}
+.panel .food-list .li-item .price{
+	position:absolute ;
+	right: 0px;
+	
+	
+}
+.panel .food-list .li-item .star-bar{
+	font-size:0 ;
+}
+.panel .food-list .li-item  .star{
+	display: block;
+	width:12px;
+	height: 13px;
+	margin-right:5px ;
+	background-image:url(../img2/xing.png) ;
+	background-repeat:no-repeat ;
+	float: left;
+}
+.panel .food-list .li-item .no-star{
+	background-position:0 -13px ;
+}
+
+.panel .pics{
+	height:380px ;
+	overflow: hidden;
+}
+.panel .pics .pic-col{
+	float: left;
+}
+.panel .pics .pic-col-m{
+	width:353px ;
+}
+.panel .pics .pic-col-s{
+	width:287px ;
+}
+.panel .pics .pic-col-l{
+width: 460px;
+}
+.panel-2{
+	margin-top:200px ;
+}
+/*footer*/
+.footer .footer-list ul{
+	float:left ;
+	width: 230px;
+	margin-right:60px ;
+	margin-top:100px ;
+	
+}
+.footer .footer-list ul:last-child{
+	margin-right:0 ;
+	margin-top:16px ;
+}
+.footer .footer-list .item{
+	margin-bottom:14px ;
+	font-size:16px ;
+	color:#ebebeb ;
+	
+}
+.footer .footer-list .footer-logo img{
+	display:block;
+	width: 182px;
+	height:56px ;
+	padding-top:86px ;
+	margin-right:42px ;
+}
+.footer .footer-list .as{
+	*margin-top:20px ;
+	margin-right:0px ;
+}

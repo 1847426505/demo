@@ -1,0 +1,311 @@
+body{
+	background:url(../img/bd-bg.png) repeat-x;
+}
+/*固定元素的宽度和居中*/
+.w{
+	width:940px;
+	margin:0px auto;
+	
+}
+
+/*设置logo*/
+.header{
+	/*background-color:#bfa ;*/
+	padding-top:37px;
+	padding-bottom:46px ;
+	
+}
+.logo{
+	/*background-color:cornflowerblue ;*/
+	margin-left:15px;
+}
+.logo img{
+	border: none;
+}
+.nav{
+	margin-top:22px;
+	float:right;
+	list-style:none;
+	/*background-color:yellow ;*/
+}
+.nav a{
+	color:#666;
+	font: bold 14px Georgia;
+	text-decoration: none;
+}
+.nav li{
+	float:left;
+	padding:0 10px 8px;
+	border-left:#d6d6d6 1px dotted;	
+}
+.nav li p{
+	color:#b7b7b7;
+	font:11px Tahoma;
+}
+/*鼠标移入效果*/
+.nav a:hover{
+	color:#868383 ;
+	text-decoration: underline;
+}
+
+
+/*设置banner*/
+.banner{
+	
+	position:relative;
+	height:354px;
+	background: url(../img/bg_yy.png) no-repeat  bottom center;
+}
+.pointerDiv{
+	position:absolute;
+	top:314px;
+	left:15px;	
+}
+.pointerDiv a{
+	width:17px;
+	height:17px;
+	float:left;
+	margin-left: 4px;
+	background: url(../img/anniu1.png)  no-repeat;
+}
+.pointerDiv .an2,
+.pointerDiv a:hover{
+	background: url(../img/anniu2.png)  no-repeat;
+}
+
+/*设置content*/
+
+.content h1{
+	color:#000000;
+	font:bold 24px Georgia;
+	text-align: center;
+	padding: 6px 0 25px 0;
+	margin-bottom: 36px;
+	background: url(../img/xiantiao.png) no-repeat bottom center;
+	
+}
+
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co,.contact .nu{
+	float:left;
+	width:300px;
+	
+
+	
+	
+	
+}
+.content .cs,.contact .co{
+	margin:0 20px ;
+}
+
+.content  h2{
+	color:#11719e;
+	font:21px georgia;
+}
+.content .p1{
+	color: #8c8c8c;
+	font:12px helvetica;
+}
+.content .imgDiv{
+	width:299px;
+	height:190px;
+	background: url(../img/bg_a.png) no-repeat ;
+	text-align: center;
+	margin:16px 0 10px 0;
+	padding-top:12px ;
+		
+}
+.content  .p2{	
+	height: 92px;
+	color: #3e3e3e;
+	font:13px Helvetica;
+	word-spacing: 2px;
+	
+	
+}
+.content .lm{
+	display: block;
+	width:163px;
+	height: 40px;
+	background:url(../img/bg_lm.png) no-repeat ;
+	text-decoration: none;
+	color: #016999;
+	font:12px/40px helvetica ;
+	text-indent: 1em;
+	margin-bottom: 35px;
+	
+	
+}
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+.clearfix{
+	zoom: 1;
+}
+/*设置contact*/
+
+.contact{	
+	background: url(../img/1a.png) no-repeat center top;
+	padding-top:44px ;
+
+	
+}
+.contact .sc,.contact .co,.contact .nu{
+	
+}
+.contact h2{
+	color: #444;
+	font:18px Georgia; 
+	border-bottom:1px dashed #d3d3d3 ;
+	padding-bottom:10px;
+	margin-bottom:15px ;
+}
+.contact .txt{
+	width:276px;
+	height:33px;
+	line-height:33px ;
+	background:url(../img/2a.png) no-repeat ;
+	margin: 0 0 16px;
+	padding: 0 10px;
+	border: none;
+}
+.contact .tarea{
+	width:290px;
+	height: 114px;
+	background: url(../img/3a.png) no-repeat;
+	border: none;
+	margin: 0 ;
+	padding: 10px ;
+	/*去除滚动条*/
+	overflow: auto;
+	/*设置文本域不能调整大小*/
+	resize: none;
+}
+.contact .btn{
+	width:163px;
+	height: 32px;
+	background: url(../img/4a.png) no-repeat;
+	border: none;
+	padding: 0;
+	margin: 11px 0px 23px;
+	color: white;
+	font:13px georgia;
+	text-align: left;
+	text-indent: 1em;
+	/*cursor用来设置鼠标指针的样式	*/
+	cursor: pointer;
+}
+
+
+/*设置联系栏左侧*/
+.sc .p3{
+	color:#444;
+	font:12px/1 helvetica;
+	
+}
+.sc .img1{
+	/*设置a字体大小*/
+	
+	font-size: 0;
+	margin-top: 4px;
+	
+	
+}
+.sc .img1 a{
+	
+	font-size: 0;
+	margin-right:5px ;
+}
+.sc img{
+	border: none;
+}
+.sc .nl{
+	
+	font:bold 18px/1 "gill sans mt";
+	padding:36px 0 10px ;
+}
+.sc .txt{
+	margin-top:14px;
+	_margin-top:18px;
+	margin-bottom:0px ;
+}
+
+/*设置联系栏右侧*/
+.nu .t3{
+	color:#444;
+	font:12px/1  helvetica;
+	height: 58px;
+	_height:60px;
+	border-bottom:1px dashed #D3D3D3;
+	
+	margin-bottom:14px ;
+	padding-bottom:9px ;
+}
+.nu img{
+	float:left;
+	margin-right:8px ;
+}
+
+
+/*兼容IE6按钮首行缩进*/
+.nu .btn{
+	_text-indent: -1em;
+}
+
+
+.nu .no-margin{
+	color:#444;
+	font:12px/1  helvetica;
+	height: 58px;
+	border-bottom:1px dashed #D3D3D3;
+	padding-bottom:9px ;
+	
+	margin-bottom: 0px;
+	
+}
+.footer{
+	background-color:#333 ;
+	height:173px;
+	border-top:#4c4c4c 10px solid;
+	
+}
+.footer p, .footer a{
+	/*background-color:red;*/
+	color:#999 ;
+	font: 11px helvetica;
+	text-decoration: none;	
+	
+	
+}
+.footer .w{
+	padding-top: 17px;
+	
+}
+.footer p{
+	margin-left:2px ;
+	margin-bottom:5px ;
+	margin-right:23px ;
+}
+
+.footer .right{
+	/*处理双倍边距的bug*/
+	display: inline;
+	
+	float:right;
+}
+.footer a:hover{
+	color: #cccaca;
+	text-decoration: underline;
+}
+	
+
+
+
+
+
+
+

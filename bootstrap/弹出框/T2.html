@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h3>弹出框实例</h3>
+			<a href="#" title="取消弹出框" data-toggle="popover" data-trigger="focus" data-content="点击文档的其他内容">点我</a>
+			<a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="一些内容">鼠标移动到我这</a>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+	</body>
+</html>

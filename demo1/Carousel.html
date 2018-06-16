@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.banner{
+				position: relative;
+				margin: 100px auto;
+				width: 800px;
+				height: 450px;
+				overflow: hidden;
+			}
+			.banner .img{
+				width: 4800px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.banner .img li{
+				float: left;
+			}
+			.banner .img li img{
+				width: 800px;
+				height: 450px;
+			}
+			.banner .num{
+				position: absolute;
+				width: 100%;
+				bottom: 10px;
+				left: 0;
+				text-align: center;
+				font-size: 0 ;
+				
+			}
+			.banner .num li{
+				display: inline-block;
+				border-radius: 50% ;
+				background: #888;
+				width: 10px;
+				height: 10px;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+			.banner .num  li.on{
+				background-color: #f60;
+			}
+			.banner .btn{
+				position: absolute;
+				top: 50%;
+				margin-top: -25px ;
+				width: 30px;
+				height: 50px;
+				color: #fff;
+				font-size: 40px;
+				text-align: center;
+				background: rgba(0,0,0,.5);
+				cursor: pointer;
+				display: none;
+				/*padding: 0 5px;*/
+			}
+			.banner:hover .btn{
+				display: block;
+			}
+			.banner .btn_l{ left: 0;}
+			.banner .btn_r{ right: 0;}
+			
+		</style>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script>
+			$(function(){
+				var i=0;
+				//复制克隆第一张图片
+				var clone=$('.banner .img li').first().clone();
+				//克隆文件添加在ul的最后
+				$('.banner .img').append(clone);
+				var size=$('.banner .img li').size();
+		
+				for(var j=0;j<size-1;j++){
+					$('.banner .num').append('<li></li>')
+				}
+				$('.banner .num li').first().addClass("on")
+				$('.banner .num li').hover(function(){
+					var index=$(this).index();		
+					i=index
+					$('.banner .img').stop().animate({left:i*-800},500)
+					$(this).addClass('on').siblings().removeClass('on')
+				});
+				$('.banner .btn_l').click(function(){
+					i--;
+					move()
+				})
+				$('.banner .btn_r').click(function(){
+					i++;
+					move()
+				})
+				
+				
+				
+				function move(){
+					
+					if(i==size){
+						$('.banner .img').css({left:0})
+						i=1;
+					}
+					if(i==-1){
+						
+						$('.banner .img').css({left:-(size-1)*800})
+						i=size-2;
+					}
+					$('.banner .img').stop().animate({left:i*-800},500)
+					if(i==size-1){
+						$('.banner .num li').eq(0).addClass('on').siblings().removeClass('on')
+					}else{
+						$('.banner .num li').eq(i).addClass('on').siblings().removeClass('on')
+					}
+				}
+				
+				var t=setInterval(function(){
+					i++
+					move()	
+				},2000);
+				$('.banner').hover(function(){
+					clearInterval(t)
+				},function(){
+					t=setInterval(function(){
+						i++
+						move()	
+					},2000);
+				})
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div class="banner">
+			<ul class="img">
+				<li><a href="#"><img src="http://img.mukewang.com/53ad2498000174af13660768.jpg" alt=""/></a></li>
+				<li><a href="#"><img src="http://img.mukewang.com/53ad25df0001300613660768.jpg" alt=""/></a></li>
+				<li><a href="#"><img src="http://img.mukewang.com/53ad26010001ac1113660768.jpg" alt=""/></a></li>
+				<li><a href="#"><img src="http://img.mukewang.com/53ad26170001a86013660768.jpg" alt=""/></a></li>
+			</ul>
+			<ul class="num">
+			</ul>
+			<div class="btn btn_l">&lt;</div>
+			<div class="btn btn_r">&gt;</div>
+			
+		</div>	
+		
+		
+	</body>
+</html>
